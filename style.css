@@ -1,20 +1,22 @@
 :root {
---blue-sapphire: hsla(195, 95%, 22%, 1);
---blue-sapphire-200: hsla(195, 95%, 37%, 1);
---blue-green: hsla(199, 43%, 20%, .2);
---jonquil: hsla(50, 94%, 49%, 1);
---papaya-whip: hsla(42, 100%, 91%, 1);
---papaya-whip-300: hsla(42, 100%, 81%, .2);
---honeydew: hsla(169, 64%, 92%, 1);
---liver: hsla(349, 12%, 35%, 1);
+  --blue-sapphire: hsla(195, 95%, 22%, 1);
+  --blue-sapphire-200: hsla(195, 95%, 37%, 1);
+  --blue-green: hsla(199, 43%, 20%, 0.2);
+  --jonquil: hsla(50, 94%, 49%, 1);
+  --papaya-whip: hsla(42, 100%, 91%, 1);
+  --papaya-whip-300: hsla(42, 100%, 81%, 0.2);
+  --honeydew: hsla(169, 64%, 92%, 1);
+  --liver: hsla(349, 12%, 35%, 1);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: white;
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -27,7 +29,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-/*   background:  linear-gradient(hsla(91, 56%, 78%, .3), hsla(89, 33%, 74%, .3)),  url(https://github.com/Bass4Change/images/blob/11224a191ec640c45b6439fb3dc2a17ffb53f9f2/Half%20Dome%20from%20North.jpeg?raw=true); */
+  /*   background:  linear-gradient(hsla(91, 56%, 78%, .3), hsla(89, 33%, 74%, .3)),  url(https://github.com/Bass4Change/images/blob/11224a191ec640c45b6439fb3dc2a17ffb53f9f2/Half%20Dome%20from%20North.jpeg?raw=true); */
   background-image: url("https://github.com/Bass4Change/images/blob/11224a191ec640c45b6439fb3dc2a17ffb53f9f2/Half%20Dome%20from%20North.jpeg?raw=true");
   background-size: cover;
   width: 100%;
@@ -44,7 +46,7 @@ a {
   width: 100%;
   height: 80px;
   background: var(--blue-sapphire);
-  z-index: 3;
+  z-index: 20;
 }
 
 .navbar-class a {
@@ -104,7 +106,7 @@ a {
     justify-content: center;
     margin: auto;
   }
-    .welcome-class h1 {
+  .welcome-class h1 {
     font-size: 3rem;
   }
 }
@@ -122,19 +124,18 @@ a {
 }
 
 .project-tile::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 10;
-  transition: background-color .6s;
+  transition: background-color 0.6s;
 }
 
 .project-tile:hover::after {
   background-color: var(--blue-green);
-
 }
 
 .project-tile h2 {
@@ -171,7 +172,6 @@ a {
 .contact-links a {
   padding: 20px;
   transition: transform 500ms;
-  
 }
 
 .contact-links a:hover {
