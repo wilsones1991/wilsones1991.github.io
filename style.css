@@ -29,8 +29,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*   background:  linear-gradient(hsla(91, 56%, 78%, .3), hsla(89, 33%, 74%, .3)),  url(https://github.com/Bass4Change/images/blob/11224a191ec640c45b6439fb3dc2a17ffb53f9f2/Half%20Dome%20from%20North.jpeg?raw=true); */
-  background-image: url("https://github.com/Bass4Change/images/blob/11224a191ec640c45b6439fb3dc2a17ffb53f9f2/Half%20Dome%20from%20North.jpeg?raw=true");
+  background:  linear-gradient(hsla(91, 56%, 78%, .3), hsla(89, 33%, 74%, .3)),  url(https://github.com/Bass4Change/images/blob/11224a191ec640c45b6439fb3dc2a17ffb53f9f2/Half%20Dome%20from%20North.jpeg?raw=true);
+  background-image: url("./images/Half\ Dome\ from\ North.jpeg");
   background-size: cover;
   width: 100%;
   height: 100vh;
