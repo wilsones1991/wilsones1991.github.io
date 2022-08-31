@@ -1,5 +1,3 @@
-# Personal Portfolio Project
+# Personal Portfolio
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/bass4change/pen/JjrGodG](https://codepen.io/bass4change/pen/JjrGodG).
-
-
+Hello, my name is Eric Wilson, and I am an aspiring Web Developer! Thank you for taking the time to check out my personal portfolio.
