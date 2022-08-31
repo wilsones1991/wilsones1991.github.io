@@ -1,73 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Eric Wilson's Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eric Wilson's Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <nav id="navbar" class="navbar-class">
+      <a href="#welcome-section">About</a>
+      <a href="#projects">Work</a>
+      <a href="#contact">Contacts</a>
+    </nav>
+    <section id="welcome-section" class="welcome-class">
+      <h1>Hi, I'm Eric. I develop responsive websites for the modern web.</h1>
+    </section>
+    <section id="projects" class="projects-class">
+      <header>
+        <h1>Here are some of my projects</h1>
+      </header>
+      <div class="projects-wrapper">
+        <a href="https://wilson-leutz.com" target="_blank">
+          <div class="project-tile tile-1">
+            <h2>Wedding Website</h2>
+            <img
+              class="tile-image"
+              src="./images/Wedding Website.png"
+              alt="Wedding Website"
+            />
+          </div>
+        </a>
+        <a href="https://eric-wilson.net/fcc-25-5-timer/" target="_blank">
+          <div class="project-tile tile-1">
+            <h2>Pomodoro Timer</h2>
+            <img
+              class="tile-image"
+              src="./images/Pomodoro Timer.png"
+              alt="Pomodoro Timer"
+            />
+          </div>
+        </a>
+        <a href="https://eric-wilson.net/choropleth-map/" target="_blank">
+          <div class="project-tile tile-1">
+            <h2>Choropleth Map</h2>
+            <img
+              class="tile-image"
+              src="./images/Choropleth Map.png"
+              alt="Choropleth Map"
+            />
+          </div>
+        </a>
+        <a href="https://codepen.io/bass4change/full/JjyvPJL" target="_blank">
+          <div class="project-tile tile-2">
+            <h2>CSS Technical Documentation</h2>
+            <img
+              class="tile-image"
+              src="./images/Technical Documentation.png"
+              alt="CSS Technical Documentation"
+            />
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="contact" class="contact-class">
+      <h1>Let's work together...</h1>
+      <div class="contact-links">
+        <a href="https://www.facebook.com/bass4change/" target="_blank"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/wilsones1991"
+          target="_blank"
+          ><i class="fab fa-github-square"></i> Github</a
+        >
+        <a href="https://www.linkedin.com/in/eswilson/" target="_blank"
+          ><i class="fab fa-linkedin"></i> Linkedin</a
+        >
+        <a href="mailto:wilsones1991@gmail.com" target="_blank"
+          ><i class="fas fa-envelope-square"></i> Email</a
+        >
+      </div>
+    </section>
+    <footer id="footer" class="footer-class">Made by Eric Wilson</footer>
+    <script type="module">
+      import { Octokit, App } from "https://cdn.skypack.dev/octokit"
+    </script>
+    <script
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.js"></script>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
-<nav id="navbar" class="navbar-class">
- <a href="#welcome-section">About</a>
- <a href="#projects">Work</a>
- <a href="#contact">Contacts</a>
-</nav>
-<section id="welcome-section" class="welcome-class">
-  <h1>Hi, I'm Eric. I develop responsive websites for the modern web.</h1>
-</section>
-<section id="projects" class="projects-class">
-  <header>
-    <h1>Here are some of my projects</h1></header>
-  <div class="projects-wrapper">
-    <a href="https://eric-wilson.net/fcc-drum-machine" target="_blank">
-      <div class="project-tile tile-1">
-        <h2>Drum Machine</h2>
-        <img class="tile-image" src="./images/drum-machine-screenshot.png" alt="Drum Machine">
-      </div>
-    </a>
-    <a href="https://codepen.io/bass4change/full/JjyvPJL" target="_blank">
-      <div class="project-tile tile-2">
-        <h2>CSS Technical Documentation</h2>
-        <img class="tile-image" src="https://github.com/Bass4Change/images/blob/main/CSS%20Technical%20Documentation.png?raw=true" alt="Tribute Page">
-      </div>
-    </a>
-    <a href="https://codepen.io/bass4change/full/WNEXVLG" target="_blank">
-      <div class="project-tile tile-3">
-        <h2>My Evergreen Soul Home Page</h2>
-        <img class="tile-image" src="https://github.com/Bass4Change/images/blob/main/My%20Evergreen%20Soul%20Home%20Page.png?raw=true" alt="My Evergreen Soul Home Page">
-      </div>
-    </a>
-    <a href="https://codepen.io/bass4change/full/GRvjQog" target="_blank">
-      <div class="project-tile tile-4">
-        <h2>Survey Page</h2>
-        <img class="tile-image" src="https://github.com/Bass4Change/images/blob/main/My%20Evergreen%20Soul%20Survey%20Form.png?raw=true" alt="Survey Page">
-      </div>
-    </a>
-    <a href="https://codepen.io/bass4change/full/abwyGzp" target="_blank">
-      <div class="project-tile tile-5">
-        <h2>Tribute Page</h2>
-        <img id="tribute-page" class="tile-image" src="https://github.com/Bass4Change/images/blob/main/Tribute%20Page.png?raw=true" alt="Tribute Page">
-      </div>
-    </a>
-  </div>
-</section>
-<section id="contact" class="contact-class">
-  <h1>Let's work together...</h1>
-  <div class="contact-links">
-    <a href="https://www.facebook.com/bass4change/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
-   <a id="profile-link" href="https://github.com/wilsones1991" target="_blank"><i class="fab fa-github-square"></i> Github</a>
-  <a href="https://www.linkedin.com/in/eswilson/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
-  <a href="mailto:wilsones1991@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i> Email</a>
-  </div>
-</section>
-<footer id="footer" class="footer-class">
-  Made by Eric Wilson
-</footer>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.js'></script>
-
-</body>
+    <!-- React Components -->
+    <script src="./Components/CollapsibleProjectContainer"></script>
+  </body>
 </html>
