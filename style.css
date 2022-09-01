@@ -29,7 +29,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background:  linear-gradient(hsla(91, 56%, 78%, .3), hsla(89, 33%, 74%, .3)),  url(https://github.com/Bass4Change/images/blob/11224a191ec640c45b6439fb3dc2a17ffb53f9f2/Half%20Dome%20from%20North.jpeg?raw=true);
+  background: linear-gradient(hsla(91, 56%, 78%, 0.3), hsla(89, 33%, 74%, 0.3)),
+    url(https://github.com/Bass4Change/images/blob/11224a191ec640c45b6439fb3dc2a17ffb53f9f2/Half%20Dome%20from%20North.jpeg?raw=true);
   background-image: url("./images/Half\ Dome\ from\ North.jpeg");
   background-size: cover;
   width: 100%;
@@ -90,37 +91,21 @@ a {
 }
 
 .projects-wrapper {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: 40vw 40vw;
-  grid-gap: 5vh 5vw;
-  justify-content: space-around;
-  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: auto;
-}
-
-@media (max-width: 800px) {
-  .projects-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-  }
-  .welcome-class h1 {
-    font-size: 3rem;
-  }
 }
 
 .project-tile {
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
   background: white;
-  max-height: 500px;
   overflow: hidden;
   border-radius: 10px;
+  margin-bottom: 23px;
 }
 
 .project-tile::after {
@@ -132,6 +117,24 @@ a {
   height: 100%;
   z-index: 10;
   transition: background-color 0.6s;
+}
+
+@media (min-width: 800px) {
+  .projects-wrapper {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 40vw 40vw;
+    grid-gap: 5vh 5vw;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .welcome-class h1 {
+    font-size: 2rem;
+  }
 }
 
 .project-tile:hover::after {
@@ -153,19 +156,23 @@ a {
 
 .contact-class {
   background: var(--liver);
-  padding: 400px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .contact-class h1 {
-  text-align: center;
-  font-size: 3.5rem;
+  display: block;
+  font-size: 2rem;
 }
 
 .contact-links {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 70px;
 }
 
@@ -181,7 +188,7 @@ a {
 .footer-class {
   background: var(--liver);
   text-align: right;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 40px 100px;
   border-top: 2px solid var(--papaya-whip);
 }
