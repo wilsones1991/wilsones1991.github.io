@@ -98,6 +98,7 @@ a {
 }
 
 .project-tile {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -105,7 +106,8 @@ a {
   background: white;
   overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 23px;
+  margin: 0 auto 23px auto;
+  max-width: 600px;
 }
 
 .project-tile::after {
@@ -123,10 +125,10 @@ a {
   .projects-wrapper {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 40vw 40vw;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5vh 5vw;
-    justify-content: space-around;
-    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
     margin: auto;
   }
 }
