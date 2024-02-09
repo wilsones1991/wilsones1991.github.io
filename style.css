@@ -1,9 +1,11 @@
 :root {
-  --blue-sapphire: hsla(195, 95%, 22%, 1);
+  --lapis-lazuli: #376996;
   --blue-sapphire-200: hsla(195, 95%, 37%, 1);
+  --secondary-font-color: #522B29;
   --blue-green: hsla(199, 43%, 20%, 0.2);
   --jonquil: hsla(50, 94%, 49%, 1);
-  --papaya-whip: hsla(42, 100%, 91%, 1);
+  --bone: #ECE2D0;
+  --bone-lighter: #ededed;
   --papaya-whip-300: hsla(42, 100%, 81%, 0.2);
   --honeydew: hsla(169, 64%, 92%, 1);
   --liver: hsla(349, 12%, 35%, 1);
@@ -20,21 +22,12 @@
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
+body {
+  background-color: var(--bone);
 }
 
-.welcome-class {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(hsla(91, 56%, 78%, 0.3), hsla(89, 33%, 74%, 0.3)),
-    url(https://github.com/Bass4Change/images/blob/11224a191ec640c45b6439fb3dc2a17ffb53f9f2/Half%20Dome%20from%20North.jpeg?raw=true);
-  background-image: url("./images/Half\ Dome\ from\ North.jpeg");
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+a {
+  text-decoration: none;
 }
 
 .navbar-class {
@@ -46,8 +39,9 @@ a {
   right: 0;
   width: 100%;
   height: 80px;
-  background: var(--blue-sapphire);
+  background: var(--lapis-lazuli);
   z-index: 20;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .25);
 }
 
 .navbar-class a {
@@ -59,25 +53,47 @@ a {
   margin-right: 5vw;
 }
 
-.welcome-class * {
-  text-align: center;
-  font-weight: normal;
-  max-width: 1000px;
-  margin: 80px 100px 0 100px;
+.welcome-class {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
 }
 
 .welcome-class h1 {
-  font-size: 4rem;
-  text-shadow: 2px 2px 5px #08013d;
+  font-size: 2rem;
+  color: rgb(40, 39, 39);
+  font-weight: lighter;
+  line-height: 3rem;
+}
+
+span.primary {
+  font-size: 3rem;
+  color: rgb(40, 39, 39);
+}
+
+.profile-img-container {
+  height: 400px;
+}
+
+.profile-img-container img {
+  height: 100%;
+  border-radius: 10px;
 }
 
 .projects-class {
-  background-color: var(--papaya-whip-300);
+  background-color: var(--lapis-lazuli);
   padding: 130px 50px 50px 50px;
 }
 
 .projects-class * {
-  color: black;
+  color: white;
 }
 
 .projects-class h1 {
@@ -85,7 +101,7 @@ a {
   text-align: center;
   padding-bottom: 20px;
   font-weight: normal;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid white;
   margin: 0 auto 40px auto;
   max-width: 700px;
 }
