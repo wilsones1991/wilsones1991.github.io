@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,7 +42,7 @@ jobs:
       - name: Build Hyde site
         run: php hyde build
         env:
-          SITE_NAME: "Eric Wilson"
+          SITE_NAME: ${{ vars.SITE_NAME }}
 
       - name: Build assets
         run: npm run build
