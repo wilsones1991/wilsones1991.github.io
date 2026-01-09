@@ -217,12 +217,21 @@ return [
     */
 
     'meta' => [
-        // Meta::name('author', 'Mr. Hyde'),
-        // Meta::name('twitter:creator', '@HydeFramework'),
-        // Meta::name('description', 'My Hyde Blog'),
-        // Meta::name('keywords', 'Static Sites, Blogs, Documentation'),
+        // Basic SEO
+        Meta::name('description', 'Eric Wilson\'s personal website'),
+        Meta::name('author', 'Eric Wilson'),
         Meta::name('generator', 'HydePHP v'.Hyde\Hyde::version()),
+
+        // Open Graph (for LinkedIn, Facebook, iMessage, etc.)
         Meta::property('site_name', env('SITE_NAME', 'HydePHP')),
+        Meta::property('type', 'website'),
+        Meta::property('description', 'Eric Wilson\'s personal website'),
+        Meta::property('url', env('SITE_URL', 'http://localhost')),
+        Meta::property('image', env('SITE_URL', 'http://localhost').'/media/kylie-and-eric-nz.png'),
+
+        // Twitter Card
+        Meta::name('twitter:card', 'summary_large_image'),
+        Meta::name('twitter:image', env('SITE_URL', 'http://localhost').'/media/kylie-and-eric-nz.png'),
     ],
 
     /*

@@ -43,6 +43,7 @@ jobs:
         run: php hyde build
         env:
           SITE_NAME: ${{ vars.SITE_NAME }}
+          SITE_URL: ${{ vars.SITE_URL }}
 
       - name: Build assets
         run: npm run build
