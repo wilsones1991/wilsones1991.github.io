@@ -41,7 +41,7 @@ jobs:
       - name: Build Hyde site
         run: php hyde build
         env:
-          SITE_NAME: ${{ vars.SITE_NAME }}
+          SITE_NAME: "Eric Wilson"
 
       - name: Build assets
         run: npm run build
