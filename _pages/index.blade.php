@@ -1,6 +1,6 @@
 @extends('hyde::layouts.app')
 @section('content')
-@php($title = "Home")
+@php($title = "Eric Wilson")
 
     <main id="content" class="flex flex-col justify-center items-center max-w-7xl mx-auto text-white min-h-[calc(100vh-136px)] px-4 md:px-8 py-8 gap-8 md:gap-12">
         <section id="hero" class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-0">
