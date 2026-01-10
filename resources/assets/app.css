@@ -93,6 +93,12 @@ h1, h2, h3, h4, h5, h6, nav, button, .nav-link {
         margin-bottom: 1em;
         line-height: 1.5em;
     }
+    
+    & ul li {
+        list-style-type: disc;
+        margin-left: 1.5em;
+        margin-bottom: 0.5em;
+    }
 
     & blockquote {
         background-color: #80808020;
